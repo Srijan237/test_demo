@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            border: 2px solid green;
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body id="body">  <!-- <h1>Append Child and Insert Before</h1>
+   -->
+    <div id="box">
+        
+    </div>
+
+    <script>
+        
+        var newElementheader=document.createElement("h1");
+        var newElemetpara=document.createElement("p");
+        // console.log(newElementheader);
+        var newTextpara=document.createTextNode("Hello I am Barsa")
+        var newTextheader=document.createTextNode("Hello World")
+        // console.log(newTextpara);
+        var newTextpara1=document.createTextNode(" Hello Everyone..I love to do code with javascript..")
+        // console.log(a);
+        var newComment=document.createComment("This is comment")
+        // console.log(newComment);
+
+        newElementheader.appendChild(newTextheader)
+        // console.log(newElementheader);
+        document.getElementById("box").appendChild(newElementheader)
+       
+        newElemetpara.appendChild(newTextpara)
+        
+        document.getElementById("box").appendChild(newElemetpara)
+        // document.getElementById("box").appendChild(newComment)
+
+        newElemetpara.appendChild(newTextpara1)
+        
+        document.getElementById("box").appendChild(newElemetpara)
+       
+       
+       
+       
+        // var target=document.getElementById("box")
+        // var target1=document.getElementById("body")
+        // console.log(target.childNodes);
+        // target.insertBefore(newTextpara1,target.childNodes[2])
+
+        // var newEle=document.createElement("h1")
+        // var newTextp=document.createTextNode("Append Child and Insert Before")
+
+        // newEle.appendChild(newTextp)
+        // console.log(newEle);
+        // target1.insertBefore(newEle,target1.childNodes[0])
+
+    </script>
+</body>
+</html>
